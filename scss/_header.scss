@@ -1,0 +1,59 @@
+@import "variables";
+@import "mixin";
+
+
+.navbar{
+  padding: 2.5rem 5%;
+  @include flex-center();
+  border-bottom: 2px solid $navbar-border;
+}
+
+.brand-title{
+  min-width: 7%;
+  // border: 2px solid salmon;
+  img{
+    min-width: 100%;
+  }
+}
+
+// .nav-links{
+//   // @include flex-center;
+//   display: flex;
+// }
+
+.toggle-button{
+  position: absolute;
+  right: 8%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2.8rem;
+  // border: 2px solid sandybrown;
+}
+
+.bar{
+  height: .5rem;
+  width: 100%;
+  background-color: $nevi-blue;
+  border-radius: 1rem;
+}
+
+.menu{
+  @include flex-center();
+  // display: flex;
+  li{
+    list-style: none;
+    display: inline-block;
+    a{
+      padding: 0 4rem;
+      text-decoration: none;
+      font-size: 2rem;
+      color: $nevi-blue;
+      transition: all 0.3s ease 0s;
+      &:hover{
+        color: $sky-blue;
+      }
+    }
+  }
+}

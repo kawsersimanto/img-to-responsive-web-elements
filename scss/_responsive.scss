@@ -1,0 +1,39 @@
+@import "header";
+@import "mixin";
+
+@media only screen and (max-width:1020px) {
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar.react{
+    border-bottom: 0;
+  }
+
+  .toggle-button{
+    display: flex;
+  }
+
+  .nav-links{
+    display: none;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+
+  .menu{
+    flex-direction: column;
+    width: 100%;
+    li{
+      width: 100%;
+      text-align: center;
+      padding: 0.3rem 0;
+      border-bottom: 0.2px solid #e9e9e9;
+    }
+  }
+}

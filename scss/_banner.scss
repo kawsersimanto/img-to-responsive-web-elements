@@ -1,0 +1,39 @@
+@import "mixin";
+@import "variables";
+
+.banner{
+  @include flex-center(center);
+}
+
+.wrapper{
+  padding: 4rem;
+  min-width: 60%;
+  @include flex-center();
+  flex-direction: column;
+  text-align: center;
+  // border: 2px solid salmon;
+}
+
+.banner-content{
+  // border: 2px solid salmon;
+  h1{
+    font-size: 5rem;
+    span{
+      color: $light-blue;
+    }
+  }
+
+  p{
+    padding: 4rem 0;
+    line-height: 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+.banner-img{
+  // border: 2px solid salmon;
+  min-width: 50%;
+  img{
+    width: 100%;
+  }
+}
